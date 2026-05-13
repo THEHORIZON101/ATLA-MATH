@@ -4,97 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>ATLAS | Fantasy Math RPG</title>
+  <title>ATLAS | Academy RPG</title>
 
-  <!-- The ?v=3 forces the browser to load the newest CSS -->
-  <link rel="stylesheet" href="./style.css?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css?v=8" />
 </head>
 
 <body>
   <main class="atlas-page">
-    <div class="version-check">ATLAS VERSION 3</div>
+    <div class="scene-art"></div>
+    <div class="scene-tint"></div>
+    <div class="scene-fog"></div>
 
-    <header class="top-bar">
-      <div class="brand">
-        <div class="brand-icon">✦</div>
-        <strong>ATLAS</strong>
+    <header class="top-nav">
+      <div class="nav-left">
+        <div class="compass">✦</div>
+        <a href="#" class="nav-brand">ATLAS</a>
+        <a href="#classes">Classes</a>
+        <a href="#world">World</a>
+        <a href="#lore">Lore</a>
+        <a href="#academy">Academy</a>
+        <a href="#leaderboards">Leaderboards</a>
       </div>
 
-      <nav>
-        <a href="#">Classes</a>
-        <a href="#">World</a>
-        <a href="#">Academy</a>
-        <a href="#">Play</a>
-      </nav>
-
-      <button class="signup-btn">Sign Up</button>
+      <div class="nav-right">
+        <a href="#">Log in</a>
+        <button class="signup">Sign Up</button>
+      </div>
     </header>
 
     <section class="hero">
-      <div class="hero-text">
+      <div class="hero-copy">
         <h1>ATLAS</h1>
-        <p class="subtitle">ACADEMY RPG</p>
+
+        <div class="subtitle-row">
+          <span></span>
+          <p>Academy RPG</p>
+          <span></span>
+        </div>
 
         <h2>Math is your magic.</h2>
 
         <p class="description">
-          Cast spells. Block attacks. Chain combos. Defeat bosses with the power of numbers.
+          Cast spells. Block attacks. Chain combos.
+          <br>
+          Defeat bosses with the power of numbers.
         </p>
 
-        <div class="buttons">
+        <div class="hero-actions">
           <button class="play-btn">PLAY ATLAS</button>
-          <button class="preview-btn">Watch Preview ▶</button>
+          <button class="preview-btn">
+            Watch Preview
+            <span>▶</span>
+          </button>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="moon"></div>
-
-        <div class="cloud cloud-one"></div>
-        <div class="cloud cloud-two"></div>
-        <div class="cloud cloud-three"></div>
-
-        <div class="dragon">
-          <div class="wing wing-left"></div>
-          <div class="wing wing-right"></div>
-          <div class="body"></div>
-          <div class="head"></div>
-          <div class="tail"></div>
+      <div class="path-panel" id="classes">
+        <div class="path-title">
+          <span></span>
+          <p>Choose Your Path</p>
+          <span></span>
         </div>
 
-        <div class="castle">
-          <div class="tower tower-left"></div>
-          <div class="tower tower-main"></div>
-          <div class="tower tower-right"></div>
-          <div class="wall wall-left"></div>
-          <div class="wall wall-right"></div>
-          <div class="gate"></div>
-          <div class="cliff"></div>
+        <div class="class-cards">
+          <article class="class-card wizard">
+            <div class="class-art">
+              <div class="magic-orb"></div>
+              <div class="hood"></div>
+            </div>
+
+            <div class="class-info">
+              <div class="class-icon">✦</div>
+              <div>
+                <h3>Wizard</h3>
+                <p>Master equations.<br>Unleash arcane force.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-card paladin">
+            <div class="class-art">
+              <div class="shield-glow"></div>
+              <div class="helmet"></div>
+            </div>
+
+            <div class="class-info">
+              <div class="class-icon">🛡</div>
+              <div>
+                <h3>Paladin</h3>
+                <p>Stand your ground.<br>Protect and prevail.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="path-section">
-      <p class="path-label">Choose Your Path</p>
-
-      <div class="path-cards">
-        <article class="path-card">
-          <div class="path-art wizard-art">✦</div>
-          <h3>Wizard</h3>
-          <p>Master equations. Unleash arcane force.</p>
-        </article>
-
-        <article class="path-card">
-          <div class="path-art paladin-art">🛡</div>
-          <h3>Paladin</h3>
-          <p>Stand your ground. Protect and prevail.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="features">
+    <section class="feature-bar" id="world">
       <article>
-        <span>📖</span>
+        <div class="feature-icon">📖</div>
         <div>
           <h3>Learn Through Adventure</h3>
           <p>Math concepts woven into quests, battles, and story.</p>
@@ -102,7 +114,7 @@
       </article>
 
       <article>
-        <span>⚔</span>
+        <div class="feature-icon">⚔</div>
         <div>
           <h3>Strategic Combat</h3>
           <p>Use logic, timing, and combos to overcome every challenge.</p>
@@ -110,15 +122,25 @@
       </article>
 
       <article>
-        <span>♦</span>
+        <div class="feature-icon">♦</div>
         <div>
           <h3>Grow Your Power</h3>
           <p>Level up, unlock abilities, and forge legendary gear.</p>
         </div>
       </article>
+
+      <article>
+        <div class="feature-icon">♛</div>
+        <div>
+          <h3>Track & Improve</h3>
+          <p>Master skills, see progress, and rise through the ranks.</p>
+        </div>
+      </article>
     </section>
+
+    <div class="bottom-ornament">✧</div>
   </main>
 
-  <script src="./script.js?v=3"></script>
+  <script src="./script.js?v=8"></script>
 </body>
 </html>
