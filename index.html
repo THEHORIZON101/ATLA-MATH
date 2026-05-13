@@ -3,151 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>ATLAS | Fantasy Math RPG</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <!-- The ?v=3 forces the browser to load the newest CSS -->
+  <link rel="stylesheet" href="./style.css?v=3" />
 </head>
+
 <body>
   <main class="atlas-page">
-    <div class="atlas-bg-glow"></div>
-    <div class="atlas-stars"></div>
+    <div class="version-check">ATLAS VERSION 3</div>
 
-    <div class="atlas-cloud atlas-cloud-1" data-depth="6"></div>
-    <div class="atlas-cloud atlas-cloud-2" data-depth="12"></div>
-    <div class="atlas-cloud atlas-cloud-3" data-depth="8"></div>
-    <div class="atlas-cloud atlas-cloud-4" data-depth="14"></div>
-
-    <div class="atlas-fog atlas-fog-1" data-depth="4"></div>
-    <div class="atlas-fog atlas-fog-2" data-depth="7"></div>
-
-    <header class="atlas-header">
-      <div class="atlas-brand">
-        <div class="atlas-brand-mark">✦</div>
-        <div>
-          <div class="atlas-brand-title">ATLAS</div>
-          <div class="atlas-brand-sub">Academy RPG</div>
-        </div>
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-icon">✦</div>
+        <strong>ATLAS</strong>
       </div>
 
-      <nav class="atlas-nav">
-        <a href="#classes">Classes</a>
-        <a href="#world">World</a>
-        <a href="#start">Play</a>
+      <nav>
+        <a href="#">Classes</a>
+        <a href="#">World</a>
+        <a href="#">Academy</a>
+        <a href="#">Play</a>
       </nav>
+
+      <button class="signup-btn">Sign Up</button>
     </header>
 
-    <section class="atlas-hero">
-      <div class="atlas-copy">
-        <div class="atlas-pill">Original Fantasy Math RPG</div>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>ATLAS</h1>
+        <p class="subtitle">ACADEMY RPG</p>
 
-        <h1 class="atlas-title">ATLAS</h1>
+        <h2>Math is your magic.</h2>
 
-        <p class="atlas-tagline">
-          Dark fantasy learning. Real combat. Math that powers every move.
+        <p class="description">
+          Cast spells. Block attacks. Chain combos. Defeat bosses with the power of numbers.
         </p>
 
-        <p class="atlas-description">
-          Enter a haunted academy where students solve math to cast spells,
-          block attacks, chain combos, and defeat massive bosses.
-          Choose your path and begin the trial.
-        </p>
-
-        <div class="atlas-buttons" id="start">
-          <button class="atlas-play-btn">▶ PLAY ATLAS</button>
-          <button class="atlas-world-btn" data-scroll="#world">Enter the World</button>
-        </div>
-
-        <div class="atlas-class-preview" id="classes">
-          <article class="atlas-mini-card">
-            <span>✦</span>
-            <div>
-              <h2>Wizard</h2>
-              <p>Elements, ranged spells, arcane combos.</p>
-            </div>
-          </article>
-
-          <article class="atlas-mini-card">
-            <span>🛡</span>
-            <div>
-              <h2>Paladin</h2>
-              <p>Armor, shields, counters, frontline power.</p>
-            </div>
-          </article>
+        <div class="buttons">
+          <button class="play-btn">PLAY ATLAS</button>
+          <button class="preview-btn">Watch Preview ▶</button>
         </div>
       </div>
 
-      <div class="atlas-scene">
-        <div class="atlas-moon" data-depth="8"></div>
+      <div class="scene">
+        <div class="moon"></div>
 
-        <div class="atlas-dragon" data-depth="18" aria-hidden="true">
-          <div class="atlas-dragon-wing atlas-dragon-wing-left"></div>
-          <div class="atlas-dragon-wing atlas-dragon-wing-right"></div>
-          <div class="atlas-dragon-body"></div>
-          <div class="atlas-dragon-head"></div>
-          <div class="atlas-dragon-tail"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+
+        <div class="dragon">
+          <div class="wing wing-left"></div>
+          <div class="wing wing-right"></div>
+          <div class="body"></div>
+          <div class="head"></div>
+          <div class="tail"></div>
         </div>
 
-        <div class="atlas-castle" data-depth="5" aria-hidden="true">
-          <div class="atlas-cliff"></div>
-
-          <div class="atlas-wall atlas-wall-left"></div>
-          <div class="atlas-wall atlas-wall-center"></div>
-          <div class="atlas-wall atlas-wall-right"></div>
-
-          <div class="atlas-tower atlas-tower-left">
-            <div class="atlas-spire"></div>
-            <span class="atlas-window"></span>
-            <span class="atlas-window atlas-window-lower"></span>
-          </div>
-
-          <div class="atlas-tower atlas-tower-center">
-            <div class="atlas-spire"></div>
-            <span class="atlas-window"></span>
-            <span class="atlas-window atlas-window-lower"></span>
-          </div>
-
-          <div class="atlas-tower atlas-tower-right">
-            <div class="atlas-spire"></div>
-            <span class="atlas-window"></span>
-            <span class="atlas-window atlas-window-lower"></span>
-          </div>
-
-          <div class="atlas-gate-glow"></div>
+        <div class="castle">
+          <div class="tower tower-left"></div>
+          <div class="tower tower-main"></div>
+          <div class="tower tower-right"></div>
+          <div class="wall wall-left"></div>
+          <div class="wall wall-right"></div>
+          <div class="gate"></div>
+          <div class="cliff"></div>
         </div>
       </div>
     </section>
 
-    <section class="atlas-feature-row" id="world">
-      <article class="atlas-feature-card">
-        <div class="atlas-feature-number">01</div>
-        <h3>Fantasy First</h3>
-        <p>
-          ATLAS should feel like a premium dark fantasy adventure before it feels like a lesson.
-        </p>
+    <section class="path-section">
+      <p class="path-label">Choose Your Path</p>
+
+      <div class="path-cards">
+        <article class="path-card">
+          <div class="path-art wizard-art">✦</div>
+          <h3>Wizard</h3>
+          <p>Master equations. Unleash arcane force.</p>
+        </article>
+
+        <article class="path-card">
+          <div class="path-art paladin-art">🛡</div>
+          <h3>Paladin</h3>
+          <p>Stand your ground. Protect and prevail.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <span>📖</span>
+        <div>
+          <h3>Learn Through Adventure</h3>
+          <p>Math concepts woven into quests, battles, and story.</p>
+        </div>
       </article>
 
-      <article class="atlas-feature-card">
-        <div class="atlas-feature-number">02</div>
-        <h3>Combat With Meaning</h3>
-        <p>
-          Math is directly tied to attacks, spellcasting, blocking, counters, and boss phases.
-        </p>
+      <article>
+        <span>⚔</span>
+        <div>
+          <h3>Strategic Combat</h3>
+          <p>Use logic, timing, and combos to overcome every challenge.</p>
+        </div>
       </article>
 
-      <article class="atlas-feature-card">
-        <div class="atlas-feature-number">03</div>
-        <h3>Choose Your Path</h3>
-        <p>
-          Become a Wizard or Paladin, each with different combat identity, feel, and progression.
-        </p>
+      <article>
+        <span>♦</span>
+        <div>
+          <h3>Grow Your Power</h3>
+          <p>Level up, unlock abilities, and forge legendary gear.</p>
+        </div>
       </article>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="./script.js?v=3"></script>
 </body>
 </html>
