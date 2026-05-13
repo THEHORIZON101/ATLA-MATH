@@ -4,109 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ATLAS | Fantasy Math RPG</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <main class="atlas-page">
-    <div class="atlas-bg"></div>
-    <div class="atlas-vignette"></div>
+    <div class="atlas-bg-glow"></div>
+    <div class="atlas-stars"></div>
+
+    <div class="atlas-cloud atlas-cloud-1" data-depth="6"></div>
+    <div class="atlas-cloud atlas-cloud-2" data-depth="12"></div>
+    <div class="atlas-cloud atlas-cloud-3" data-depth="8"></div>
+    <div class="atlas-cloud atlas-cloud-4" data-depth="14"></div>
+
+    <div class="atlas-fog atlas-fog-1" data-depth="4"></div>
+    <div class="atlas-fog atlas-fog-2" data-depth="7"></div>
 
     <header class="atlas-header">
-      <div class="atlas-logo">
-        <div class="atlas-logo-icon">✦</div>
+      <div class="atlas-brand">
+        <div class="atlas-brand-mark">✦</div>
         <div>
-          <div class="atlas-logo-text">ATLAS</div>
-          <div class="atlas-logo-subtitle">Academy RPG</div>
+          <div class="atlas-brand-title">ATLAS</div>
+          <div class="atlas-brand-sub">Academy RPG</div>
         </div>
       </div>
 
       <nav class="atlas-nav">
-        <a href="#paths">Paths</a>
-        <a href="#combat">Combat</a>
-        <a href="#start">Start</a>
+        <a href="#classes">Classes</a>
+        <a href="#world">World</a>
+        <a href="#start">Play</a>
       </nav>
     </header>
 
     <section class="atlas-hero">
       <div class="atlas-copy">
-        <div class="atlas-kicker">✦ Math powers every spell, block, combo, and boss mechanic.</div>
+        <div class="atlas-pill">Original Fantasy Math RPG</div>
 
-        <h1 class="atlas-title">Enter the dark academy of numbers.</h1>
+        <h1 class="atlas-title">ATLAS</h1>
+
+        <p class="atlas-tagline">
+          Dark fantasy learning. Real combat. Math that powers every move.
+        </p>
 
         <p class="atlas-description">
-          Choose your path, master tactical combat, and solve math under pressure
-          to unleash magic, raise shields, and defeat ancient exam-beasts.
+          Enter a haunted academy where students solve math to cast spells,
+          block attacks, chain combos, and defeat massive bosses.
+          Choose your path and begin the trial.
         </p>
 
         <div class="atlas-buttons" id="start">
-          <button class="atlas-btn atlas-btn-main">Begin Your Trial →</button>
-          <button class="atlas-btn atlas-btn-ghost">Watch Combat Preview</button>
+          <button class="atlas-play-btn">▶ PLAY ATLAS</button>
+          <button class="atlas-world-btn" data-scroll="#world">Enter the World</button>
+        </div>
+
+        <div class="atlas-class-preview" id="classes">
+          <article class="atlas-mini-card">
+            <span>✦</span>
+            <div>
+              <h2>Wizard</h2>
+              <p>Elements, ranged spells, arcane combos.</p>
+            </div>
+          </article>
+
+          <article class="atlas-mini-card">
+            <span>🛡</span>
+            <div>
+              <h2>Paladin</h2>
+              <p>Armor, shields, counters, frontline power.</p>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="atlas-stack" id="paths">
-        <div class="atlas-stack-glow"></div>
+      <div class="atlas-scene">
+        <div class="atlas-moon" data-depth="8"></div>
 
-        <article class="atlas-card atlas-card-1">
-          <span>✦</span>
-          <div>
-            <h2>Wizard Path</h2>
-            <p>Elements · ranged spells · knowledge chains</p>
-          </div>
-        </article>
+        <div class="atlas-dragon" data-depth="18" aria-hidden="true">
+          <div class="atlas-dragon-wing atlas-dragon-wing-left"></div>
+          <div class="atlas-dragon-wing atlas-dragon-wing-right"></div>
+          <div class="atlas-dragon-body"></div>
+          <div class="atlas-dragon-head"></div>
+          <div class="atlas-dragon-tail"></div>
+        </div>
 
-        <article class="atlas-card atlas-card-2">
-          <span>🛡</span>
-          <div>
-            <h2>Paladin Path</h2>
-            <p>Armor · blocks · counters · discipline</p>
-          </div>
-        </article>
+        <div class="atlas-castle" data-depth="5" aria-hidden="true">
+          <div class="atlas-cliff"></div>
 
-        <article class="atlas-card atlas-card-3">
-          <span>⚔</span>
-          <div>
-            <h2>Combat Trials</h2>
-            <p>Solve fast to strike, defend, and combo</p>
-          </div>
-        </article>
+          <div class="atlas-wall atlas-wall-left"></div>
+          <div class="atlas-wall atlas-wall-center"></div>
+          <div class="atlas-wall atlas-wall-right"></div>
 
-        <article class="atlas-card atlas-card-4">
-          <span>◆</span>
-          <div>
-            <h2>Living Lessons</h2>
-            <p>Fractions · equations · geometry · strategy</p>
+          <div class="atlas-tower atlas-tower-left">
+            <div class="atlas-spire"></div>
+            <span class="atlas-window"></span>
+            <span class="atlas-window atlas-window-lower"></span>
           </div>
-        </article>
 
-        <article class="atlas-card atlas-card-5">
-          <span>✧</span>
-          <div>
-            <h2>The Gate of Proof</h2>
-            <p>Break the rune shield before the boss charges.</p>
+          <div class="atlas-tower atlas-tower-center">
+            <div class="atlas-spire"></div>
+            <span class="atlas-window"></span>
+            <span class="atlas-window atlas-window-lower"></span>
           </div>
-        </article>
+
+          <div class="atlas-tower atlas-tower-right">
+            <div class="atlas-spire"></div>
+            <span class="atlas-window"></span>
+            <span class="atlas-window atlas-window-lower"></span>
+          </div>
+
+          <div class="atlas-gate-glow"></div>
+        </div>
       </div>
     </section>
 
-    <section class="atlas-info" id="combat">
-      <article>
-        <b>01</b>
-        <h2>Pick a class</h2>
-        <p>Wizard or Paladin changes your attacks, defenses, gear, and math pressure.</p>
+    <section class="atlas-feature-row" id="world">
+      <article class="atlas-feature-card">
+        <div class="atlas-feature-number">01</div>
+        <h3>Fantasy First</h3>
+        <p>
+          ATLAS should feel like a premium dark fantasy adventure before it feels like a lesson.
+        </p>
       </article>
 
-      <article>
-        <b>02</b>
-        <h2>Solve to act</h2>
-        <p>Every correct answer becomes a real combat decision, not a worksheet pop-up.</p>
+      <article class="atlas-feature-card">
+        <div class="atlas-feature-number">02</div>
+        <h3>Combat With Meaning</h3>
+        <p>
+          Math is directly tied to attacks, spellcasting, blocking, counters, and boss phases.
+        </p>
       </article>
 
-      <article>
-        <b>03</b>
-        <h2>Master bosses</h2>
-        <p>Bosses use shields, phases, counters, and mechanics that reward strategy.</p>
+      <article class="atlas-feature-card">
+        <div class="atlas-feature-number">03</div>
+        <h3>Choose Your Path</h3>
+        <p>
+          Become a Wizard or Paladin, each with different combat identity, feel, and progression.
+        </p>
       </article>
     </section>
   </main>
